@@ -1,0 +1,4 @@
+---
+- name: Update server hostname
+  arensb.truenas.hostname:
+    name: storage-server

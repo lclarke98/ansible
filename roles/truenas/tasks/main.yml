@@ -1,0 +1,3 @@
+---
+- name: Update server hostname
+  include_tasks: ./update-hostname.yml
