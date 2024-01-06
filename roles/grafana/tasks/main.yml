@@ -1,0 +1,6 @@
+---
+- name: Create Grafana Directories
+  include_tasks: ./grafana-directories.yml
+
+- name: Create Grafana Container
+  include_tasks: ./grafana-container.yml

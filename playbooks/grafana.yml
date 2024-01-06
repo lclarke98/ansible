@@ -1,0 +1,4 @@
+- hosts: main
+  become: yes
+  roles:
+    - ../roles/grafana

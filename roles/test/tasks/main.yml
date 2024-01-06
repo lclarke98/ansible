@@ -1,0 +1,6 @@
+---
+
+- name: Create /downloads directory
+  file:
+    path: /downloads
+    state: directory

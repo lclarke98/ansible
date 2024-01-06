@@ -1,0 +1,14 @@
+---
+- name: Create data directory
+  file:
+    state: directory
+    path: /data
+    owner: root
+    group: root
+
+- name: Create grafana data directory
+  file:
+    state: directory
+    path: /data/grafana
+    owner: 1000
+    group: 1000
