@@ -1,0 +1,10 @@
+---
+
+- name: Create mongodb user
+  include_tasks: ./create-mongodb-user.yml
+
+- name: Create mongodb directories
+  include_tasks: ./create-mongodb-directories.yml
+
+- name: Install mongodb
+  include_tasks: ./install-mongodb.yml

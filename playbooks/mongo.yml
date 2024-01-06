@@ -1,6 +1,6 @@
 - hosts: localhost
   become: yes
   roles:
-    - common
-    - mongo
-    - monitoring
+    - ../roles/common
+    - ../roles/mongo
+    - ../roles/monitoring

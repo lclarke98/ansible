@@ -1,0 +1,8 @@
+---
+- name: Create mongodb data directory
+  file:
+    state: directory
+    path: "/var/lib/mongodb"
+    mode: 0755
+    owner: mongodb
+    group: mongodb

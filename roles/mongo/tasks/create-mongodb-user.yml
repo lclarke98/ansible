@@ -1,0 +1,11 @@
+- name: Create mongodb user
+  user:
+    name: mongodb
+    uid: 28
+    system: true
+    group: mongodb
+    comment: "MongoDB Server"
+    home: "/var/lib/mongo"
+    create_home: false
+    shell: /sbin/nologin
+  register: set_user
