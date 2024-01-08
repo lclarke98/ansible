@@ -1,0 +1,6 @@
+---
+- name: Create Jenkins Directories
+  include_tasks: ./create-jenkins-directories.yml
+
+- name: Create Jenkins Container
+  include_tasks: ./create-jenkins-container.yml

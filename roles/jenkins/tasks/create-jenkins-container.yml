@@ -1,0 +1,13 @@
+---
+- name: Create jenkins container
+  community.docker.docker_container:
+    name: jenkins
+    image: jenkins/jenkins
+    state: started
+    restart: true
+    ports:
+      - 8080:8080/tcp
+      - 50000:50000/tcp
+    volumes:
+      - /data/jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
